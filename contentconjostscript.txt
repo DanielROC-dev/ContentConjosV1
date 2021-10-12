@@ -1,0 +1,63 @@
+[ SCRIPT ]
+
+[intro]
+(er zit geen verschil in verhaal tussen take en lesley maar andere character en andere verwoording in sommige dingen.)
+
+
+   een klant die achter ze computer op de content conjos website is en zodra die er op klikt gaat het beeld van hem weg en krijg je een       optie, kies je conjo: take of lesley. 
+
+   of
+
+   een klant komt bij de content conjos voor de intake, korte kennismaking. je maakt keuze voor take of lesley die je veder helpt.
+
+
+[minigame #1 strategie/concept ontwikkeling]
+ 
+ - een klant binnenhalen via en vragen game met keuzes voor een beter bereik (misschien verwarrend als de klant al iemand heeft gekozen
+ - vragen: leeftijd audience die ze proberen te bereiken, 
+ - mis juist aan de hand van de vragen wie je helpt?
+
+[after game]
+
+   de klant besluit nu om te werken met de conjos en gaat hierna meteen door met filmen.
+
+[minigame #2 videoproductie]
+
+ - je camera(muis/finger) op een object houden terwijl die rond beweegt en juist van je probeert weg te gaan
+
+ - soort van flappy bird maar met een drone
+
+ - beelden opnemen voor klant
+
+[after game]
+
+   leslie/take zegt na de opnames laten we kijken of de beelden wel goed zijn gelukt. 
+
+
+[minigame #3 Content]
+
+ - achter een computer? zogenaamd aan het editen maar eigenlijk meer aan het kijken of alle punten wel in de "opnames" zitten
+
+ - iets wat weergeeft dat het verhaal in een video erg belangrijk is
+
+ - je muis houden op een object en hoe langer en hoe precieser hoe beter? muis en vinger als controller
+
+ - dingen/woorden zoals "engagement, orginality, convenience, does it fit wel with the company" op het scherm. mis slechte dingen die ze juist niet moeten pakken zoals: ignoring consumers needs, not having a clear vision, failing to create a plan, avoiding social media.
+	 
+ - stukjes van die videoclip op random plekken plaatsen totdat die compleet is
+
+ - je kan ook slecht toevoegen maar dan krijg je een slechtere score
+
+ - "je kan het zelf nie perfect doen maar daarvoor zijn wij er natuurlijk"
+
+ - klikbaar optie
+[outro]
+
+   totaal score dat je ziet hoe beroemd je bedrijf is geworden of hoeveel aandacht je bedrijf heeft gekregen.
+
+   mischien alle scores bij houden voor high scores enzo
+
+
+
+ 
+   take is homo
