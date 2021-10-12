@@ -18,9 +18,12 @@
  - vragen: leeftijd audience die ze proberen te bereiken, 
  - mis juist aan de hand van de vragen wie je helpt?
 
+
 [after game]
 
    de klant besluit nu om te werken met de conjos en gaat hierna meteen door met filmen.
+
+   (in geval van pixel overhaul aanloop animaties toevoegen)
 
 [minigame #2 videoproductie]
 
@@ -52,6 +55,12 @@
  - "je kan het zelf nie perfect doen maar daarvoor zijn wij er natuurlijk"
 
  - klikbaar optie
+
+ - muis houden erop voor 3 seconden
+
+ - animation dat je het ziet laden
+	
+ - explosie
 [outro]
 
    totaal score dat je ziet hoe beroemd je bedrijf is geworden of hoeveel aandacht je bedrijf heeft gekregen.

@@ -8,7 +8,6 @@ public class GameManagerContent : MonoBehaviour
 {
     public GameObject goodOne;
     public GameObject enemy;
-
     public float distanceOffset = 0f;
     private float blueCircleGrabbed = 0f;
     public Text scoreText;
@@ -27,7 +26,7 @@ public class GameManagerContent : MonoBehaviour
     void Start() 
     {
 
-       // Debug.Log(goodOneText.Text.text);
+     
         gameOver = false;
         gameStarted = false;
        
@@ -37,7 +36,7 @@ public class GameManagerContent : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0) && gameStarted == false)
         {
-         //   Debug.Log(ChildGameObject1[0].text + "bruh");
+        
             gameStarted = true;
             startText.gameObject.SetActive(false);
             text.gameObject.SetActive(false);
@@ -54,7 +53,7 @@ public class GameManagerContent : MonoBehaviour
             enemy.GetComponentInChildren<TextMesh>().text = badThings[count];
             }
         }
-        RaycastHit raycastHit; // dit zorgt ervoor dat muis input word gezien
+        RaycastHit raycastHit; 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction * 10, Color.green);
         if (Physics.Raycast(ray, out raycastHit, 100f))
