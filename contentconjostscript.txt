@@ -1,5 +1,6 @@
 [ SCRIPT ]
 
+
 [intro]
 (er zit geen verschil in verhaal tussen take en lesley maar andere character en andere verwoording in sommige dingen.)
 
