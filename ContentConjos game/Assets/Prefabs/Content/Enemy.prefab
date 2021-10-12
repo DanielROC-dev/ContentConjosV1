@@ -88,13 +88,13 @@ TextMesh:
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 24
+  m_FontSize: 38
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: 43491ded5375f674ab712139f11d9251, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278254079
+    rgba: 4280408319
 --- !u!1 &7439313118441959340
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,3 +223,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startForce: {x: 10.24, y: 0.66, z: 0}
   maxSpeed: 10
+  minSpeed: 5

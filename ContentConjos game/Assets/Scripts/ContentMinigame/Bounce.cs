@@ -7,6 +7,7 @@ public class Bounce : MonoBehaviour
     public Vector3 startForce;
     private Rigidbody Rb;
     public float maxSpeed = 20f;
+    public float minSpeed = 10f;
   
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,8 @@ public class Bounce : MonoBehaviour
     void FixedUpdate() {
         if(Rb.velocity.magnitude > maxSpeed){
             Rb.velocity = Vector3.ClampMagnitude(Rb.velocity, maxSpeed);
-        }
+        } // constant speed
+        Rb.velocity = minSpeed * (Rb.velocity.normalized);
     }
 
 }

@@ -8,8 +8,7 @@ public class GameManagerContent : MonoBehaviour
 {
     public GameObject goodOne;
     public GameObject enemy;
-    public GameObject counter;
-    public GameObject counterEnemy;
+
     public float distanceOffset = 0f;
     private float blueCircleGrabbed = 0f;
     public Text scoreText;
@@ -31,7 +30,7 @@ public class GameManagerContent : MonoBehaviour
        // Debug.Log(goodOneText.Text.text);
         gameOver = false;
         gameStarted = false;
-        startText.text = badThings[0];
+       
     }
 
     void Update()
@@ -81,9 +80,6 @@ public class GameManagerContent : MonoBehaviour
     {
         Destroy(gameObject);
         Debug.Log("destroyed target");
-        GameObject newCounter = Instantiate(counter);
-        distanceOffset = distanceOffset + 2;
-        newCounter.transform.position = counter.transform.position + new Vector3(distanceOffset, 0, 0);
         blueCircleGrabbed++;
         ammountHit++;
         UpdateScore(10);
@@ -92,9 +88,6 @@ public class GameManagerContent : MonoBehaviour
         {
             Destroy(gameObject);
             Debug.Log("destroyed target enemy");
-            GameObject newCounter = Instantiate(counterEnemy);
-            distanceOffset = distanceOffset + 2;
-            newCounter.transform.position = counter.transform.position + new Vector3(distanceOffset, 0, 0);
             ammountHit++;
         }
 
