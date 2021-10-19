@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 public class DroneScript : MonoBehaviour
 {
     
@@ -15,20 +17,28 @@ public class DroneScript : MonoBehaviour
     private Rigidbody2D rb;
     public GameObject pipes;
     public GameObject RestartButton;
+    public GameObject nextButton;
+    public Text attemptsRemaining;
     // Start is called before the first frame update
     void Start()
     {
+        
+
         //collect components
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        
         rb = GetComponent<Rigidbody2D>();
         if(gameStarted == false){
             rb.gravityScale = gravityStasis;
         }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+       
         if(gameOver == false){
             if(Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0)){
                 gameStarted = true;
@@ -48,12 +58,15 @@ public class DroneScript : MonoBehaviour
     {         
         if(other.gameObject.CompareTag("pipe"))
         {   
+            attemptsRemaining.text = ("attempts remaining: " + GlobalData.droneGameAttempts);
             gameManager.gameOverText.gameObject.SetActive(true);   
             
             Debug.Log("game over");  
             gameOver = true;
             anim.SetBool("GameEnd", true);    
             RestartButton.gameObject.SetActive(true);   
+            attemptsRemaining.gameObject.SetActive(true); 
+            nextButton.gameObject.SetActive(true); 
         
         }
     }

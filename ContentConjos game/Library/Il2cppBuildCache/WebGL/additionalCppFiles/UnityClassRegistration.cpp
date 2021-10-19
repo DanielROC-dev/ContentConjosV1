@@ -36,6 +36,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_TextRendering();
 	RegisterModule_TextRendering();
 
+	void RegisterModule_TextCore();
+	RegisterModule_TextCore();
+
 	void RegisterModule_UI();
 	RegisterModule_UI();
 
@@ -171,7 +174,7 @@ class TrailRenderer;
 class VFXRenderer; 
 class Rigidbody; template <> void RegisterUnityClass<Rigidbody>(const char*);
 class Rigidbody2D; template <> void RegisterUnityClass<Rigidbody2D>(const char*);
-namespace TextRenderingPrivate { class TextMesh; } 
+namespace TextRenderingPrivate { class TextMesh; } template <> void RegisterUnityClass<TextRenderingPrivate::TextMesh>(const char*);
 class Transform; template <> void RegisterUnityClass<Transform>(const char*);
 namespace UI { class RectTransform; } template <> void RegisterUnityClass<UI::RectTransform>(const char*);
 class Tree; 
@@ -201,7 +204,7 @@ class Motion; template <> void RegisterUnityClass<Motion>(const char*);
 class AnimationClip; template <> void RegisterUnityClass<AnimationClip>(const char*);
 class NavMeshData; 
 class OcclusionCullingData; 
-class PhysicMaterial; 
+class PhysicMaterial; template <> void RegisterUnityClass<PhysicMaterial>(const char*);
 class PhysicsMaterial2D; 
 class PreloadData; template <> void RegisterUnityClass<PreloadData>(const char*);
 class RayTracingShader; 
@@ -281,7 +284,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 81 non stripped classes
+	//Total: 83 non stripped classes
 	//0. Animation
 	RegisterUnityClass<Animation>("Animation");
 	//1. AnimationClip
@@ -418,31 +421,35 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<BoxCollider>("Physics");
 	//67. Collider
 	RegisterUnityClass<Collider>("Physics");
-	//68. PhysicsManager
+	//68. PhysicMaterial
+	RegisterUnityClass<PhysicMaterial>("Physics");
+	//69. PhysicsManager
 	RegisterUnityClass<PhysicsManager>("Physics");
-	//69. Rigidbody
+	//70. Rigidbody
 	RegisterUnityClass<Rigidbody>("Physics");
-	//70. SphereCollider
+	//71. SphereCollider
 	RegisterUnityClass<SphereCollider>("Physics");
-	//71. BoxCollider2D
+	//72. BoxCollider2D
 	RegisterUnityClass<BoxCollider2D>("Physics2D");
-	//72. Collider2D
+	//73. Collider2D
 	RegisterUnityClass<Collider2D>("Physics2D");
-	//73. CompositeCollider2D
+	//74. CompositeCollider2D
 	RegisterUnityClass<CompositeCollider2D>("Physics2D");
-	//74. Physics2DSettings
+	//75. Physics2DSettings
 	RegisterUnityClass<Physics2DSettings>("Physics2D");
-	//75. PolygonCollider2D
+	//76. PolygonCollider2D
 	RegisterUnityClass<PolygonCollider2D>("Physics2D");
-	//76. Rigidbody2D
+	//77. Rigidbody2D
 	RegisterUnityClass<Rigidbody2D>("Physics2D");
-	//77. TextRendering::Font
+	//78. TextRendering::Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//78. UI::Canvas
+	//79. TextRenderingPrivate::TextMesh
+	RegisterUnityClass<TextRenderingPrivate::TextMesh>("TextRendering");
+	//80. UI::Canvas
 	RegisterUnityClass<UI::Canvas>("UI");
-	//79. UI::CanvasGroup
+	//81. UI::CanvasGroup
 	RegisterUnityClass<UI::CanvasGroup>("UI");
-	//80. UI::CanvasRenderer
+	//82. UI::CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
 
 }

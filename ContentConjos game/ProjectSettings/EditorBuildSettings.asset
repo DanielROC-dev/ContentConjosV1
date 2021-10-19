@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DroneMinigame.unity
     guid: 643c46202dec9754398a3c5c051ae060
+  - enabled: 1
+    path: Assets/Scenes/transition 2.unity
+    guid: fe07d566b5ccc3848a9d59c855a8d5f7
+  - enabled: 1
+    path: Assets/Scenes/ContentMinigame.unity
+    guid: 7adf8b73d81d94941a9ade88e05091b6
   m_configObjects: {}

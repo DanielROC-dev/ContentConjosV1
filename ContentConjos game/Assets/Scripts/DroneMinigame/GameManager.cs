@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public Text gameOverText;
     public bool isGameActive = false;
     
-
+    
     void Start()
     {
         score = 0;
@@ -24,5 +24,7 @@ public class GameManager : MonoBehaviour
         score += scoreToAdd;
         scoreText.text = score.ToString();
     }
+
+    
     
 }

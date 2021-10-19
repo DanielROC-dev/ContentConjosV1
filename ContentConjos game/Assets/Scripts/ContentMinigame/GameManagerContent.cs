@@ -19,6 +19,7 @@ public class GameManagerContent : MonoBehaviour
     public bool gameOver;
     public bool gameStarted;
     public GameObject RestartButton;
+  
     string[] goodThings = {"inviting", "engaging", "authentic", "branding", "creative", "perzonalized", "memorable", "proffesional equipment", "clear message", "fun"};
     string[] badThings = {"boring", "weird", "off-rhythem", "no theme", "not consistent"};
 

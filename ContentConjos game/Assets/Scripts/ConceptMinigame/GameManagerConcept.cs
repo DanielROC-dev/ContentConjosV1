@@ -43,6 +43,7 @@ public class GameManagerConcept : MonoBehaviour
         next++;
         order();
         
+        
     }
 
     void order()
