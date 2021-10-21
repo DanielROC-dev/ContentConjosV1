@@ -7,7 +7,8 @@ public class testing : MonoBehaviour
     private float startTime;
     private float endTime;
     bool mouseUp;
-
+   
+    public Animator animator;
 
    /* void OnMouseDown() 
     {
@@ -19,6 +20,7 @@ public class testing : MonoBehaviour
         startTime = 0f;
         endTime = 0f; 
         mouseUp = false;
+        
     }
     
     void OnMouseDown() 
@@ -26,6 +28,7 @@ public class testing : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             startTime = Time.time;
+            animator.SetBool("mouseOnTarget", true);
         }
     }
 
@@ -48,6 +51,7 @@ public class testing : MonoBehaviour
         if(endTime - startTime > 0.5f)
         {
             Debug.Log(endTime - startTime);
+            animator.SetBool("mouseOnTarget", false);
             startTime = 0f;
             endTime = 0f;
         }       

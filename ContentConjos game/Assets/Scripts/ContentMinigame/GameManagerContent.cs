@@ -19,6 +19,8 @@ public class GameManagerContent : MonoBehaviour
     public bool gameOver;
     public bool gameStarted;
     public GameObject RestartButton;
+    private float spawnRangeX = 0.0f;
+    private float spawnRangeY = 0.0f;
   
     string[] goodThings = {"inviting", "engaging", "authentic", "branding", "creative", "perzonalized", "memorable", "proffesional equipment", "clear message", "fun"};
     string[] badThings = {"boring", "weird", "off-rhythem", "no theme", "not consistent"};
@@ -44,13 +46,13 @@ public class GameManagerContent : MonoBehaviour
 
             for(int count = 0; count < 10; count++)
             {
-            Instantiate(goodOne);
+            Instantiate(goodOne, GenerateSpawnPostion(), goodOne.transform.rotation);
             goodOne.GetComponentInChildren<TextMesh>().text = goodThings[count];
             }
 
             for(int count = 0; count < 5; count++)
             {
-            Instantiate(enemy);
+            Instantiate(enemy, GenerateSpawnPostion(), enemy.transform.rotation);
             enemy.GetComponentInChildren<TextMesh>().text = badThings[count];
             }
         }
@@ -96,6 +98,22 @@ public class GameManagerContent : MonoBehaviour
             score += scoreToAdd;
             scoreText.text = (score + "%");
         }
+    }
+    Vector3 GenerateSpawnPostion()
+    {      
+        float spawnPosX = Random.Range(spawnRangeX, spawnRangeX + 8.0f);
+        float spawnPosY = Random.Range(spawnRangeY, spawnRangeY + 2.0f);
+        
+        if (Random.Range(0, 2) == 0)
+        {
+            spawnPosY = -spawnPosY;
+        }   
+        if (Random.Range(0, 2) == 0)
+        {
+            spawnPosX = -spawnPosX;    
+        }  
+        Vector3 randomPos = new Vector3(spawnPosY, spawnPosY, 0);
+        return randomPos;           
     }    
 
   
