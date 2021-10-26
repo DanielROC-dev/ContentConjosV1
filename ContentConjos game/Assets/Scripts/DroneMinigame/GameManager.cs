@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public Text introText;
     public Text gameOverText;
     public bool isGameActive = false;
+    public static int highestScore;
     
     
     void Start()
@@ -23,7 +24,11 @@ public class GameManager : MonoBehaviour
         scoreText.gameObject.SetActive(true);
         score += scoreToAdd;
         scoreText.text = score.ToString();
+        highestScore = score;
     }
+
+    
+    
 
     
     

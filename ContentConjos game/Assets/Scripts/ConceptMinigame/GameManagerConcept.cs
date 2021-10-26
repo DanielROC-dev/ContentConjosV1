@@ -21,9 +21,7 @@ public class GameManagerConcept : MonoBehaviour
         next = 0;
         text.GetComponentInChildren<Text>().text = Question1[0];
         buttonA.GetComponentInChildren<Text>().text = Question1[1];
-        buttonB.GetComponentInChildren<Text>().text = Question1[2];
-
-        
+        buttonB.GetComponentInChildren<Text>().text = Question1[2];  
     }
 
     // Update is called once per frame
@@ -41,9 +39,7 @@ public class GameManagerConcept : MonoBehaviour
     public void buttonBClicked()
     {
         next++;
-        order();
-        
-        
+        order();       
     }
 
     void order()
@@ -62,7 +58,6 @@ public class GameManagerConcept : MonoBehaviour
         text.GetComponentInChildren<Text>().text = Question2[0];
         buttonA.GetComponentInChildren<Text>().text = Question2[1];
         buttonB.GetComponentInChildren<Text>().text = Question2[2];
-        
     } 
 
     void nextNextQuestion()
