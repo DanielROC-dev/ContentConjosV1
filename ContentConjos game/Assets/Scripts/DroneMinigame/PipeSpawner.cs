@@ -6,7 +6,7 @@ public class PipeSpawner : MonoBehaviour
 {
     private DroneScript droneScript;
     public GameObject pipe;
-    private float pipeSpawnTimer = 1.6f;
+    private float pipeSpawnTimer = 2.2f;
     private float pipeHeightOffset = 3f;
     private float timer = 0;
     

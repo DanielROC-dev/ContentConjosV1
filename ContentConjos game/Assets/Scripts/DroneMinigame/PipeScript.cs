@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PipeScript : MonoBehaviour
 {
-    float speed = 5;
+    float speed = 3;
     private float leftLimit = -20;
     
     private DroneScript droneScript;

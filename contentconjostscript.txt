@@ -1,11 +1,14 @@
 [ SCRIPT ]
 
+start scherm
+
+!!! VERWERK PDF ERIN !!!
 
 [intro]
 (er zit geen verschil in verhaal tussen take en lesley maar andere character en andere verwoording in sommige dingen.)
 
 
-   een klant die achter ze computer op de content conjos website is en zodra die er op klikt gaat het beeld van hem weg en krijg je een       optie, kies je conjo: take of lesley. 
+   een klant die achter ze computer op de content conjos website is en zodra die er op klikt gaat het beeld van hem weg en krijg je een optie, kies je conjo: take of lesley. 
 
    of
 
@@ -66,6 +69,11 @@
    totaal score dat je ziet hoe beroemd je bedrijf is geworden of hoeveel aandacht je bedrijf heeft gekregen.
 
    mischien alle scores bij houden voor high scores enzo
+
+   
+
+
+
 
 
 

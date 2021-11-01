@@ -39,7 +39,9 @@ public class DroneScript : MonoBehaviour
     {
         
        
-        if(gameOver == false){
+        if(gameOver == false && gameManager.gameScreenGone == true){
+            gameManager.introText.gameObject.SetActive(true);
+            gameManager.scoreText.gameObject.SetActive(true);
             if(Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0)){
                 gameStarted = true;
                 rb.AddForce(Vector2.up * velocity);         
@@ -63,7 +65,7 @@ public class DroneScript : MonoBehaviour
             
             Debug.Log("game over");  
             gameOver = true;
-            anim.SetBool("GameEnd", true);    
+           // anim.SetBool("GameEnd", true);    
             RestartButton.gameObject.SetActive(true);   
             attemptsRemaining.gameObject.SetActive(true); 
             nextButton.gameObject.SetActive(true); 

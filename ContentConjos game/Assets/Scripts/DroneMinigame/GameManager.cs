@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public Text gameOverText;
     public bool isGameActive = false;
     public static int highestScore;
+    public GameObject startingScreen;
+    public bool gameScreenGone;
+    
     
     
     void Start()
@@ -27,7 +30,11 @@ public class GameManager : MonoBehaviour
         highestScore = score;
     }
 
-    
+    public void removeStartScreen()
+    {
+        startingScreen.gameObject.SetActive(false);
+        gameScreenGone = true;
+    }
     
 
     
