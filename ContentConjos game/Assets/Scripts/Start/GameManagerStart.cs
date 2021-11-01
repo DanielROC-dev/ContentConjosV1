@@ -13,6 +13,7 @@ public class GameManagerStart : MonoBehaviour
     public GameObject[] buttons;
     public Text confirmationText;
     public Text introText;
+    public Text title;
     private int Lesley;
     private int Take;
     public AudioClip clickSound;
@@ -46,6 +47,7 @@ public class GameManagerStart : MonoBehaviour
     {
         firstScreen.gameObject.SetActive(false); 
         introText.gameObject.SetActive(false); 
+        title.gameObject.SetActive(false);
         for (int i = 0; i < 2; i++)
         {
             buttons[i].gameObject.SetActive(true);
