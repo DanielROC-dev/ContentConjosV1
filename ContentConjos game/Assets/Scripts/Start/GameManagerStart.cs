@@ -14,6 +14,7 @@ public class GameManagerStart : MonoBehaviour
     public Text confirmationText;
     public Text introText;
     public Text title;
+    public Text chooseConjoText;
     private int Lesley;
     private int Take;
     public AudioClip clickSound;
@@ -34,6 +35,7 @@ public class GameManagerStart : MonoBehaviour
            {
                AudioSource.PlayOneShot(clickSound, 2f);
                count = true;
+               
            }
            
         }
@@ -46,6 +48,7 @@ public class GameManagerStart : MonoBehaviour
     void removeFirstScreen()
     {
         firstScreen.gameObject.SetActive(false); 
+        chooseConjoText.gameObject.SetActive(true);
         introText.gameObject.SetActive(false); 
         title.gameObject.SetActive(false);
         for (int i = 0; i < 2; i++)
