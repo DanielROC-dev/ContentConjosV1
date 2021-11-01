@@ -64,6 +64,8 @@ start scherm
  - animation dat je het ziet laden
 	
  - explosie
+
+ - vang de ballen van boven
 [outro]
 
    totaal score dat je ziet hoe beroemd je bedrijf is geworden of hoeveel aandacht je bedrijf heeft gekregen.

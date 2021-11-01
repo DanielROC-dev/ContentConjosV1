@@ -6,5 +6,6 @@ public class GlobalData : MonoBehaviour
 {
     public static int totalScore;
     public static int droneGameAttempts = 3;
+    public static bool chooseTake;
          
 }
